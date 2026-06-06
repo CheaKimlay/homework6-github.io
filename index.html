@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Chea Kimlay" />
+    <title>Input-form</title>
+    <style>
+      * {
+        margin: 10px;
+        font-size: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <form
+      id="form"
+      style="
+        height: auto;
+        display: flex;
+        justify-content: center;
+        font-family:
+          Consolas,
+          &quot;Courier New&quot;,
+          monospace,
+          Kantumruy Pro;
+      "
+    >
+      <fieldset>
+        <legend align="center">FORM</legend>
+        <div id="selfInfo">
+          <fieldset>
+            <legend>១.ពត៍មានផ្ទាល់ខ្លួន</legend>
+            <label for="txtName">ឈ្មោះពេញ៖</label><br />
+            <input
+              type="text"
+              name=""
+              id=""
+              style="width: 60vw"
+              placeholder="បញ្ចូលឈ្មោះ"
+              required
+            /><br />
+
+            <label for="txtName">ថ្ងៃខែឆ្នាំកំណើត៖</label><br />
+            <input
+              type="date"
+              name="userBirth"
+              id=""
+              style="width: 60vw"
+              required
+            /><br />
+
+            <label for="txtDender">ភេទ៖</label>
+            <div id="txtGender">
+              <label for="male">ប្រុស</label>
+              <input type="radio" name="userGender" id="male" required />
+              <label for="female">ស្រី</label>
+              <input
+                type="radio"
+                name="userGender"
+                id="female"
+                required
+              /><br />
+            </div>
+
+            <label for="txtProvine">ខេត្ត/រាជធានីកំណើត</label><br />
+            <select name="userProvine" id="txtProvine" style="width: 60vw">
+              <option value="ជ្រើសរើសខេត្ត/រាធានី">
+                --ជ្រើសរើសខេត្ត/រាធានី--
+              </option>
+              <option value="បន្ទាយមានជ័យ">បន្ទាយមានជ័យ</option>
+              <option value="បាត់ដំបង">បាត់ដំបង</option>
+              <option value="រាជធានីភ្នំពេញ">រាជធានីភ្នំពេញ</option>
+              <option value="កែប">កែប</option>
+              <option value="ត្បូងឃ្មុំ">ត្បូងឃ្មុំ</option>
+              <option value="តាកែវ">តាកែវ</option>
+              <option value="ស្វាយរៀង">ស្វាយរៀង</option>
+              <option value="ស្ទឹងត្រែង">ស្ទឹងត្រែង</option>
+              <option value="សៀមរាប">សៀមរាប</option>
+              <option value="រតនគិរី">រតនគិរី</option>
+              <option value="ព្រៃវែង">ព្រៃវែង</option>
+              <option value="ពោធិ៍សាត់">ពោធិ៍សាត់</option>
+              <option value="ព្រះវិហារ">ព្រះវិហារ</option>
+              <option value="ព្រះសីហនុ">ព្រះសីហនុ</option>
+              <option value="ប៉ៃលិន">ប៉ៃលិន</option>
+              <option value="ឧត្តរមានជ័យ">ឧត្តរមានជ័យ</option>
+              <option value="មណ្ឌលគិរី">មណ្ឌលគិរី</option>
+              <option value="ក្រចេះ">ក្រចេះ</option>
+              <option value="កោះកុង">កោះកុង</option>
+              <option value="កណ្ដាល">កណ្ដាល</option>
+              <option value="កំពត">កំពត</option>
+              <option value="កំពង់ធំ">កំពង់ធំ</option>
+              <option value="កំពង់ស្ពឺ">កំពង់ស្ពឺ</option>
+              <option value="កំពង់ឆ្នាំង">កំពង់ឆ្នាំង</option>
+              <option value="កំពង់ចាម">កំពង់ចាម</option>
+            </select>
+          </fieldset>
+        </div>
+        <div id="graduatedInfo">
+          <fieldset>
+            <legend>ពត៍មានការសិក្សា</legend>
+
+            <label for="txtGrade">ឆ្នាំសិក្សា៖</label><br />
+            <select name="userGrade" id="txtGrade" style="width: 60vw">
+              <option value="year1">ឆ្នាំទី១</option>
+              <option value="year2">ឆ្នាំទី២</option>
+              <option value="year3">ឆ្នាំទី៣</option>
+              <option value="year4">ឆ្នាំទី៤</option></select
+            ><br />
+
+            <label for="favSkill">ជំនាញដែលចូលចិត្ត</label>
+            <div id="favSkill">
+              <input
+                type="checkbox"
+                name="userFavSkill"
+                class="userFavSkillList"
+                id="webDev"
+              /><label for="webDev">Web Dev</label>
+              <br />
+
+              <input
+                type="checkbox"
+                name="userFavSkill"
+                class="userFavSkillList"
+                id="uxUi"
+              /><label for="uxUi">UX/UI DESIGN</label>
+              <br />
+
+              <input
+                type="checkbox"
+                name="userFavSkill"
+                class="userFavSkillList"
+                id="networking"
+              />
+              <label for="networking">Networking</label>
+            </div>
+          </fieldset>
+        </div>
+        <div id="accountInfo">
+          <fieldset>
+            <legend>គណនីសុវត្ថភាព៖</legend>
+
+            <label for="txtemail">អុីមែល៖</label><br />
+            <input type="email" name="userEmail" id="txtEmail" required /><br />
+
+            <label for="txtPassword">លេខកូដសម្ងាត់៖</label><br />
+            <input
+              type="password"
+              name="userPassword"
+              id="txtPassword"
+              minlength="8"
+              required
+            />
+          </fieldset>
+        </div>
+        <div style="text-align: center">
+          <button
+            type="submit"
+            style="
+              background-color: rgb(87, 197, 87);
+              padding: 3px;
+              font-family: khmer moul;
+            "
+          >
+            រក្សាទុក(submit)
+          </button>
+          <button
+            type="reset"
+            style="background-color: red; padding: 3px; font-family: khmer moul"
+          >
+            សម្អាត(clear)
+          </button>
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>
